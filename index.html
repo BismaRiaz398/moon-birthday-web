@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - E-Commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .categories {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .category {
+            background-color: #ffffff;
+            margin: 0 10px;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 150px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .category:hover {
+            transform: scale(1.1);
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            background-color: white;
+            padding: 20px;
+            margin: 15px;
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product h3 {
+            font-size: 1.2rem;
+            color: #333;
+        }
+        .product p {
+            color: #777;
+        }
+        .product .price {
+            font-size: 1.5rem;
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .product button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our E-Commerce Store</h1>
+</header>
+
+<div class="categories">
+    <div class="category">Shoes</div>
+    <div class="category">Bags</div>
+    <div class="category">Cosmetics</div>
+</div>
+
+<div class="products">
+    <div class="product">
+        <img src="assets/images/product1.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Category: Shoes</p>
+        <p class="price">$49.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product">
+        <img src="assets/images/product2.jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Category: Bags</p>
+        <p class="price">$29.99</p>
+        <button>Add to Cart</button>
+    </div>
+    <!-- More products can be added similarly -->
+</div>
+
+</body>
+</html>
